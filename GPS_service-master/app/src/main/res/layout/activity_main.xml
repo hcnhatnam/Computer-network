@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GPS"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="1"
+    tools:context="testing.gps_service.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeSplitBackground"
+        android:elevation="0dp"
+        android:fontFamily="cursive"
+        android:text="Location Tracker"
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorLinkInverse"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tkView"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:elevation="0dp"
+        android:fontFamily="serif"
+        android:text="Tài khoản"
+        android:textAlignment="center"
+        android:textColor="?android:attr/colorMultiSelectHighlight"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"/>
+
+    <EditText
+        android:id="@+id/tkEdit"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Nhập email..."
+        android:inputType="textEmailAddress"
+        android:text="phamvanlinh143@gmail.com"
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.13">
+
+            <TextView
+                android:id="@+id/IPAnalytic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:elevation="1dp"
+                android:fontFamily="serif"
+                android:text="IP Analyst"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/IPAnalystEdit"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="cursive"
+                android:hint="Nhập IP..."
+                android:inputType="text"
+                android:text="192.168.43.215"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/IPPortServer"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:elevation="1dp"
+                android:fontFamily="serif"
+                android:text="Port AL"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PortEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="cursive"
+                android:hint="Nhập port..."
+                android:inputType="text"
+                android:text="9876"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/IPGWView"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:elevation="1dp"
+                android:fontFamily="serif"
+                android:text="IP Gateway"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/IPGWEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="cursive"
+                android:hint="Nhập IP..."
+                android:inputType="text"
+                android:text="192.168.43.12"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/IPView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:elevation="1dp"
+                android:fontFamily="serif"
+                android:text="Port GW"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PortGWEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="cursive"
+                android:hint="Nhập port..."
+                android:inputType="text"
+                android:text="9876"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif"
+        android:text="Loại truy cập"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp">
+
+        <RadioGroup
+            android:id="@+id/truycap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/ViTriRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:elevation="0dp"
+                android:fontFamily="serif"
+                android:text="Thu thập vị trí"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/TimKiemRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:text="Tìm kiếm thông tin (Tên user):"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/SearchEdit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12pt"
+            android:layout_marginTop="-3pt"
+            android:fontFamily="serif"
+            android:hint="Nhập thông tin"
+            android:inputType="textEmailAddress"
+            android:text="1510216@hcmut.edu.vn"
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorPrimaryInverseNoDisable"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0pt"
+        android:background="?android:attr/listChoiceIndicatorSingle"
+        android:fontFamily="serif"
+        android:onClick="xuLyMoVaGuiDuLieu"
+        android:text="Truy cập"
+        android:textColor="@android:color/holo_red_dark" />
+
+</LinearLayout>

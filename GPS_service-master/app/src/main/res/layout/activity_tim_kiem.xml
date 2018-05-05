@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="testing.gps_service.TimKiemActivity">
+
+    <fragment
+        android:id="@+id/myMap"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="399dp"
+        android:layout_height="573dp"
+        tools:layout_editor_absoluteY="-2dp"
+        tools:layout_editor_absoluteX="-10dp" />
+</android.support.constraint.ConstraintLayout>
